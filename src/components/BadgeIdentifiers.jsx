@@ -1,5 +1,5 @@
 // Import the badge components
-import { HTML, CSS, JS, PHP, SQL, DJANGO, REACT, NODE, TS, GRAPHQL, MONGODB, EXPRESS, TAILWINDCSS, FIREBASE, FLASK, PYTORCH, PYTHON } from './svg/badges';
+import { HTML, CSS, JS, PHP, SQL, DJANGO, REACT, NODE, TS, GRAPHQL, MONGODB, EXPRESS, TAILWINDCSS, FIREBASE, FLASK, PYTORCH, PYTHON, OPENCV } from './svg/badges';
 import Tippy from '@tippyjs/react';
 
 // Define a consistent class for styling the badges
@@ -24,6 +24,8 @@ const badgeData = [
     { id: 'pytorch', label: 'PyTorch', Component: PYTORCH },
     { id: 'flask', label: 'Flask', Component: FLASK },
     { id: 'python', label: 'Python', Component: PYTHON },
+    { id: 'opencv', label: 'OpenCV', Component: OPENCV },
+
 ];
 
 // Generate badge components dynamically

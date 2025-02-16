@@ -11,6 +11,7 @@ export default function About() {
     const [experienceData, setExperienceData] = useState([]);
 
     useEffect(() => {
+        document.title = "About";
         const handleScroll = () => {
             setScrollPosition(window.scrollY);
         };

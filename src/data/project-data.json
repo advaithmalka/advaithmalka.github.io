@@ -6,7 +6,8 @@
     "link": "https://squat-form-analyzer.streamlit.app/",
     "date": "7/29/24",
     "badges": [
-      "python"
+      "python",
+      "opencv"
     ]
   },
   {
