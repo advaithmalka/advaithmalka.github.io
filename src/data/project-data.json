@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Chess AI",
+    "description": "Play chess against an AI right in your browser!",
+    "img": "chess-ai.jpg",
+    "link": "https://advaithmalka.github.io/chess-ai/",
+    "date": "10/7/20",
+    "badges": [
+      "html",
+      "css",
+      "js"
+    ]
+  },
+  {
+    "name": "DevMedia",
+    "description": "A social media app built for developers, by developers.",
+    "img": "devmedia.png",
+    "link": "https://advaithmalka.github.io/devmedia/",
+    "date": "11/19/20",
+    "badges": [
+      "html",
+      "css",
+      "ts",
+      "react",
+      "node",
+      "graphql",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "JobRecover",
+    "description": "A web app made for HackTJ 7.5 and designed to connect employers to the unemployed, during difficult times. Thanks to Sritan and Nithil for making this project possible.",
+    "img": "jobRecover.jpg",
+    "link": "https://realtechnerd.github.io/job-recover-client/",
+    "date": "12/13/20",
+    "badges": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "node",
+      "graphql",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "SuperChat",
+    "description": "A realtime chat app built for the future.",
+    "img": "superchat.png",
+    "link": "https://advaithmalka.github.io/superchat/",
+    "date": "12/19/20",
+    "badges": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "express",
+      "node",
+      "graphql",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "MediCord",
+    "description": "An app that transcribes and summarizes audio files quickly and efficiently for patient use after doctor visits.",
+    "img": "medicord.png",
+    "link": "https://advaithmalka.github.io/medicord/",
+    "date": "4/11/21",
+    "badges": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "express",
+      "node",
+      "firebase",
+      "mongodb"
+    ]
+  },
+  {
+    "name": "Cop Classifier",
+    "description": "Classifies cars as police vehicles or regular traffic. Can be used in traffic signals to detect cop cars.",
+    "img": "cop-classifier.png",
+    "link": "https://advaithmalka.github.io/cop-classifier/",
+    "date": "7/16/24",
+    "badges": [
+      "python",
+      "pytorch",
+      "flask"
+    ]
+  },
+  {
+    "name": "Squat Form Analyzer",
+    "description": "Uses openCV + Mediapipe to analyze the depth of your squat.",
+    "img": "squat.jpg",
+    "link": "https://squat-form-analyzer.streamlit.app/",
+    "date": "7/29/24",
+    "badges": [
+      "python"
+    ]
+  }
+]

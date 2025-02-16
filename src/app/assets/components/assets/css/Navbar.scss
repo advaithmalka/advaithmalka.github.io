@@ -1,0 +1,120 @@
+.megamenu {
+	position: absolute;
+}
+
+.megamenu .dropdown-menu {
+	background: none;
+	border: none;
+}
+.dropdown-menu {
+	width: 50vw;
+}
+.projects-dropdown {
+	width: 30vw;
+}
+
+.text-uppercase {
+	letter-spacing: 0.08em;
+}
+button.lit-btn {
+	background-color: rgb(21, 161, 255);
+}
+#projects-home {
+	margin-right: 100px;
+}
+#home-logo {
+	position: absolute;
+	margin-left: 15%;
+	border: none;
+	transition: 100ms;
+	padding: 0px;
+	filter: brightness(2);
+	top: 8px !important;
+	&:hover {
+		transform: translateY(-0.8px);
+	}
+}
+.custom-shadow {
+	box-shadow: 0px 5px 15px rgba(56, 56, 56, 0.1);
+}
+.nav-color {
+	background-color: white !important;
+}
+/*
+.nav-link.text-small.pb-0{
+	color: rgb(0, 116, 224);
+	font-size: 20px;
+	
+}
+.nav-link.text-small.pb-0:hover{
+	color: rgba(255, 255, 255, 0.692)
+}*/
+
+.nav-title {
+	color: black !important;
+	transition: 200ms;
+	&:hover {
+		color: rgb(131, 131, 131) !important;
+	}
+}
+.arrow-white.arrow-down:hover {
+	opacity: 0.5;
+}
+.nav-content {
+	margin-right: 20px;
+}
+
+#navbar-hamburger {
+	width: 65px;
+	height: 40px;
+	padding-top: 5px;
+	outline: none !important;
+}
+@media screen and (min-width: 1024px) {
+	.nav-arrow {
+		position: absolute;
+		top: -1px;
+		left: calc(50% - 27px) !important;
+	}
+	#navbar-row {
+		margin: auto !important;
+		position: relative;
+		left: 100px;
+	}
+	.nav-dropdown {
+		width: 550px !important; // WIDTH OF DROPDOWN IN LARGE SCREEN
+	}
+}
+.nav-arrow {
+	filter: invert(1);
+	&:hover {
+		filter: invert(58%) sepia(0%) saturate(0%) hue-rotate(183deg)
+			brightness(89%) contrast(88%);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-dropdown {
+		width: 83vw;
+		padding-right: 20px !important; // NOTE WIDTH SMALL SCREEN
+	}
+	#navbar-row {
+		margin-left: -10px !important;
+	}
+	.navbar-collapse.collapsing .nav-arrow {
+		display: none !important;
+	}
+	.navbar-collapse.collapse .nav-arrow {
+		display: inline;
+		position: absolute;
+		top: -41px;
+		left: 100px;
+		padding: 0 20 !important;
+	}
+}
+.drop-item {
+	color: #007bff;
+	&:hover {
+		color: #0055af;
+	}
+}

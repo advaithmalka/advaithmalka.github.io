@@ -1,0 +1,32 @@
+*:not(.codebox pre code) {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.codebox pre code {
+	font-family: monospace !important;
+	font-size: 15px;
+	font-weight: 400;
+	/* color: #ff5959 !important; */
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+#contents-col {
+	overflow: hidden;
+	height: 84%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+#contents-col:hover {
+	overflow: scroll;
+}
+
+@media (max-width: 992px) {
+	#contents-col {
+		height: 73%;
+	}
+}
