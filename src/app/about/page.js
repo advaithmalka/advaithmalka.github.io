@@ -64,7 +64,7 @@ export default function About() {
                         </div>
 
                         {/* Profile Image */}
-                        <div className="size-[500] rounded-full overflow-hidden border-4 border-blue-500 shadow-lg flex items-center justify-center">
+                        <div className="size-[500px] rounded-full overflow-hidden border-4 border-blue-500 shadow-lg flex items-center justify-center">
                             <img
                                 src="/img/about-photo.png"
                                 alt="Advaith Malka"
