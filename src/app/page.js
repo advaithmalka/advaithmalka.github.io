@@ -11,7 +11,6 @@ export default function Home() {
 
     useEffect(() => {
         // Get up to 3 featured projects
-        const featured = data.reverse();
         setProjectCards(
           data.slice(0, 3).map((project, idx) => (
               <Card

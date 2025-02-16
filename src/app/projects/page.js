@@ -20,7 +20,7 @@ export default function Projects() {
 
         // Set initial project cards
         setProjectCards(
-            data.reverse().map((project, idx) => (
+            data.map((project, idx) => (
                 <Card
                     key={idx}
                     title={project.name}

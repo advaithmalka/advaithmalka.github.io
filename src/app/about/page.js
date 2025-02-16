@@ -18,7 +18,7 @@ export default function About() {
         window.addEventListener("scroll", handleScroll);
 
         setExperienceData(
-            data.reverse().map((experience, index) => (
+            data.map((experience, index) => (
                 <div key={index} className="bg-gray-800 p-6 rounded-xl shadow-xl">
                     <h4 className="text-3xl text-white font-semibold">{experience.title}</h4>
                     <p className="text-xl text-gray-400">{experience.company}</p>
