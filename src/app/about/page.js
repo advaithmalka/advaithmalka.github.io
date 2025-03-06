@@ -51,7 +51,7 @@ export default function About() {
 
             {/* Information Section */}
             <div className="container mx-auto px-auto">
-                <div className="py-12 mx-10 lg:mx-60">
+                <div className="py-12 mx-10 xl:mx-60">
                     {/* Who am I? Section */}
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         {/* Text Content */}
