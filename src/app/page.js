@@ -12,7 +12,8 @@ export default function Home() {
     const urlsToPing = [
         "https://advaithmalka-nc-calculator-api.hf.space/",
         "https://advaithmalka-cristae-detect-api.hf.space/",
-        "https://advaithmalka-mito-detect-api.hf.space/"
+        "https://advaithmalka-mito-detect-api.hf.space/",
+        "https://cop-classifier-api.onrender.com/"
     ]
 
     useEffect(() => {
