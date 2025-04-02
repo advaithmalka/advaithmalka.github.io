@@ -1,5 +1,15 @@
 [
-  
+  {
+    "name": "NC Ratio Calculator",
+    "description": "ML model that calculates the Nucleus-Cytoplasm ratio of a cell image.",
+    "img": "nc-ratio.jpg",
+    "link": "https://advaithmalka.github.io/nc-ratio",
+    "date": "4/1/25",
+    "badges": [
+      "python",
+      "pytorch"
+    ]
+  },
   {
     "name": "BioSegment",
     "description": "Utilizes AI to segment Mitochondira and Cristae from EM images.",
