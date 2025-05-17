@@ -11,6 +11,7 @@ export default function Home() {
 
     const urlsToPing = [
         "https://advaithmalka-nc-calculator-api.hf.space/",
+        "https://advaithmalka-structai-api.hf.space/",
         "https://advaithmalka-cristae-detect-api.hf.space/",
         "https://advaithmalka-mito-detect-api.hf.space/",
         "https://cop-classifier-api.onrender.com/"
@@ -20,7 +21,7 @@ export default function Home() {
         // Get up to 3 featured projects
         setProjectCards(
             data
-            .filter((_, idx) => idx === 0 || idx === 1 || idx === 3)
+            .filter((_, idx) => idx === 0 || idx === 1 || idx === 2)
             .map((project, idx) => (
                 <Card
                     key={idx}
