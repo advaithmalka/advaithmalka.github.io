@@ -1,5 +1,15 @@
 [
   {
+    "name": "StructAI",
+    "description": "Fine-tuned version of Meta LLaMA that can generate real-time visualizations of data structures.",
+    "img": "structai.jpg",
+    "link": "https://advaithmalka.github.io/strucai",
+    "date": "5/17/25",
+    "badges": [
+      "python"
+    ]
+  },
+  {
     "name": "NC Ratio Calculator",
     "description": "ML model that calculates the Nucleus-Cytoplasm ratio of a cell image.",
     "img": "nc-ratio.jpg",
