@@ -3,7 +3,7 @@
     "name": "StructAI",
     "description": "Fine-tuned version of Meta LLaMA that can generate real-time visualizations of data structures.",
     "img": "structai.jpg",
-    "link": "https://advaithmalka.github.io/strucai",
+    "link": "https://advaithmalka.github.io/structAI",
     "date": "5/17/25",
     "badges": [
       "python"
