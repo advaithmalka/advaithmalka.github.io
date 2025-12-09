@@ -7,9 +7,9 @@ export default function Footer() {
         <footer className="bg-gray-900 text-gray-400 py-6 text-center mt-12">
             <div className="container mx-auto px-6">
                 <p className="text-lg font-semibold text-white">&copy; {new Date().getFullYear()} Advaith Malka. All rights reserved.</p>
-                
+
                 {/* Contact Icons */}
-                <div className="flex justify-center gap-6 mt-4">
+                {/* <div className="flex justify-center gap-6 mt-4">
                     <a
                         href="https://github.com/AdvaithMalka"
                         target="_blank"
@@ -32,7 +32,7 @@ export default function Footer() {
                     >
                         <FaEnvelope size={30} />
                     </a>
-                </div>
+                </div> */}
             </div>
         </footer>
     );

@@ -3,19 +3,26 @@
 @tailwind utilities;
 
 :root {
-  /* --background: #ffffff; */
-  --foreground: #171717;
-}
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0f172a;
+  --foreground: #f8fafc;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: radial-gradient(circle at top left, #1e293b, #020617);
+  /* Lowkey Slate/Black gradient */
+  background-attachment: fixed;
+  /* gradient covers full scroll */
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-} */ 
+  margin: 0;
+  padding: 0;
+}

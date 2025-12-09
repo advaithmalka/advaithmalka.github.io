@@ -7,10 +7,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
-    "@tippyjs/react": "^4.2.6",
+    "framer-motion": "^12.23.25",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

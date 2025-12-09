@@ -1,9 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "@/app/assets/css/App.scss";
-import "tippy.js/dist/tippy.css";  // Import Tippy.js styles globally
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+import CursorSpotlight from "@/components/CursorSpotlight";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,13 +24,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased mt-10`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar /> 
+        <CursorSpotlight />
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

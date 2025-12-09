@@ -1,11 +1,8 @@
-// Import the badge components
 import { HTML, CSS, JS, PHP, SQL, DJANGO, REACT, NODE, TS, GRAPHQL, MONGODB, EXPRESS, TAILWINDCSS, FIREBASE, FLASK, PYTORCH, PYTHON, OPENCV } from './svg/badges';
-import Tippy from '@tippyjs/react';
+import Tooltip from './Tooltip';
 
-// Define a consistent class for styling the badges
 const badgeClassName = 'mt-1 mr-1 float-right';
 
-// Define badge details
 const badgeData = [
     { id: 'html', label: 'HTML', Component: HTML },
     { id: 'css', label: 'CSS', Component: CSS },
@@ -28,14 +25,13 @@ const badgeData = [
 
 ];
 
-// Generate badge components dynamically
 export const badgeIdentifiers = badgeData.reduce((acc, { id, label, Component }) => {
     acc[id] = (
-        <Tippy key={id} content={label}>
+        <Tooltip key={id} content={label}>
             <span className={badgeClassName}>
                 <Component width={30} />
             </span>
-        </Tippy>
+        </Tooltip>
     );
     return acc;
 }, {});

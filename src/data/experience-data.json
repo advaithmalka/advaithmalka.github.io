@@ -1,14 +1,14 @@
 [
     {
         "title": "Undergraduate Researcher",
-        "company": "Professor Wang - Virginia Tech",
-        "duration": "Feb. 2025 - Present",
-        "description": "Working on EEG2Text model."
+        "company": "ROLE Lab - Virginia Tech",
+        "duration": "August 2025 - Present",
+        "description": "Integrating RAG with uncertainty tokens to reduce unnecessary LLM retrieval."
     },
     {
         "title": "Cyber Security and AI Intern",
         "company": "Collins Aerospace - RTX Corporation",
         "duration": "Summer 2025",
-        "description": ""
+        "description": "Engineered a RAG-powered AI agent for context-aware code generation and developed tools to optimize cybersecurity fuzzing pipelines."
     }
-  ]
+]

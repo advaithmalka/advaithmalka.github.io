@@ -1,26 +1,29 @@
-"use client"; // Required if this component uses hooks later
-
-import Image from "next/image"; // Next.js optimized image
-import "@/app/assets/css/Card.scss"; // Ensure the path is correct
-import { badgeIdentifiers } from "./BadgeIdentifiers";; // Adjusted path to components
-import "tippy.js/dist/tippy.css";
+"use client";
+import Image from "next/image";
+import "@/app/assets/css/Card.scss";
+import { badgeIdentifiers } from "./BadgeIdentifiers";;
+// import Tooltip from "./Tooltip";
 
 const Card = ({ title, desc, date, img, link, badges, style }) => {
     const allBadges = badges.map((badge) => badgeIdentifiers[badge]);
 
     return (
         <div className="col-lg-4 col-md-6">
-            <div className="lit-card my-4 bg-gray-800" style={style}>
-                    <Image
-                        src={`/img/${img}`} 
-                        alt="Project"
-                        className="lit-card-img"
-                        width={1000}
-                        height={1000}
-                    />
-                {allBadges}
-                <div className="lit-card-body ">
-                    <h1 className="lit-card-title text-blue-400 mb-3 f-inter">{title}</h1>
+            <div className="lit-card my-4" style={style}>
+                <Image
+                    src={`/img/${img}`}
+                    alt="Project"
+                    className="lit-card-img"
+                    width={1000}
+                    height={1000}
+                />
+                <div className="lit-card-body !pt-1">
+                    <div className="flex justify-between items-start mb-1">
+                        <h1 className="lit-card-title text-blue-400 f-inter m-0 mt-2">{title}</h1>
+                        <div className="flex flex-wrap justify-end relative z-10 -mr-6">
+                            {allBadges}
+                        </div>
+                    </div>
                     <p className="lit-card-text mb-4 text-stone-400">{desc}</p>
                     <p className="fs-13 lit-card-date text-white">{date}</p>
                     <a target="_blank" rel="noopener noreferrer" href={link} className="text-decoration-none">
