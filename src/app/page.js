@@ -45,8 +45,8 @@ export default function Home() {
                     </h1>
                 </FadeIn>
                 <FadeIn delay={0.2}>
-                    <p className="text-2xl max-w-2xl mb-8 text-slate-300 font-light leading-relaxed mx-auto">
-                        I'm a sophomore student at Virginia Tech pursuing a BS in Computer Science focusing on machine learning and data science. Welcome to my personal website, where you can explore my work and learn more about what I do.
+                    <p className="text-xl max-w-2xl mb-8 text-slate-300 font-light leading-relaxed mx-auto">
+                        I'm a junior at Virginia Tech pursuing a BS in Computer Science focusing on machine learning and data science. Welcome to my personal website, where you can explore my work and learn more about what I do.
                     </p>
                 </FadeIn>
                 <FadeIn delay={0.2}>
@@ -65,7 +65,7 @@ export default function Home() {
                 </FadeIn>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, idx) => (
-                        <FadeIn key={idx} delay={idx * 0.1}>
+                        <FadeIn key={idx} delay={idx * 0.05}>
                             <Card
                                 title={project.name}
                                 desc={project.description}

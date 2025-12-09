@@ -8,18 +8,23 @@
 .f-nunito {
   font-family: "Nunito", sans-serif !important;
 }
+
 $bg-color: #12171f;
+
 nav {
   background-color: $bg-color;
 }
+
 :root {
   background-color: $bg-color;
 }
+
 body.f-roboto {
   #home {
     font-family: "Roboto", sans-serif !important;
   }
 }
+
 .body-grad {
   background-image: linear-gradient(to right, #00c6ff, #0072ff);
   background-repeat: no-repeat;
@@ -30,11 +35,13 @@ body.f-roboto {
 .f-raleway {
   font-family: "Raleway", sans-serif;
 }
+
 .f-inter {
-  font-family: "Inter", sans-serif !important;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
+
 #home {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-inter), sans-serif;
 }
 
 .abt-btn {
@@ -45,15 +52,15 @@ body.f-roboto {
   color: white;
   transition: all 200ms;
   background: linear-gradient(135deg, #f55668, #f86e59);
+
   &:hover {
     transform: translateY(-1px);
     box-shadow: 3px 3px 10px rgba(39, 39, 39, 0.1);
     filter: brightness(1.1);
   }
 }
-*:not(.codebox pre code) {
-  font-family: "Raleway", sans-serif;
-}
+
+
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -82,26 +89,33 @@ body.f-roboto {
 }
 
 .footer-link {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.8);
+
   &:hover {
     color: #bebebe;
   }
 }
+
 #baby-advaith-pic {
   width: 100%;
 }
+
 #home-content {
   width: 600px;
 }
+
 @media screen and (max-width: 800px) {
   #baby-advaith-pic {
     width: 80%;
   }
+
   #home-content {
     width: 80vw;
   }
 }
+
 $spinner-border: 2.5px;
+
 .lit-spinner {
   width: 30px;
   height: 30px;
@@ -111,20 +125,24 @@ $spinner-border: 2.5px;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
 .lit-spinner-black {
   @extend .lit-spinner;
   border-top: $spinner-border solid #000;
   border-bottom: $spinner-border solid #000;
 }
+
 .lit-spinner-big {
   @extend .lit-spinner-black;
   width: 6rem !important;
   height: 6rem !important;
 }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -141,6 +159,7 @@ $spinner-border: 2.5px;
   box-shadow: 4px 4px 5px rgba(20, 20, 20, 0.2);
   transition: 200ms;
   text-transform: uppercase;
+
   &:hover {
     filter: brightness(1.1);
     box-shadow: 4px 4px 5px rgba(20, 20, 20, 0.25);
@@ -154,6 +173,7 @@ $spinner-border: 2.5px;
     transform: translateY(0px);
     transition: 200ms;
   }
+
   &:hover {
     img {
       transform: translateX(2.5px);

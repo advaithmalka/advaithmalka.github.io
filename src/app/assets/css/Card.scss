@@ -1,4 +1,4 @@
-$color-header: #ffffff;
+$color-header: rgba(255, 255, 255, 0.9);
 $color-text: #94a3b8;
 $transition: 0.2s;
 $btn-grad: linear-gradient(155deg, #0ea5e9 0%, #3b82f6 100%);
@@ -34,7 +34,7 @@ $btn-grad: linear-gradient(155deg, #0ea5e9 0%, #3b82f6 100%);
 		font-size: 24px;
 		font-weight: 700;
 		margin-bottom: 16px;
-		color: #e2e8f0;
+		color: $color-header;
 	}
 
 	&-text {

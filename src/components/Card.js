@@ -25,7 +25,7 @@ const Card = ({ title, desc, date, img, link, badges, style }) => {
                         </div>
                     </div>
                     <p className="lit-card-text mb-4 text-stone-400">{desc}</p>
-                    <p className="fs-13 lit-card-date text-white">{date}</p>
+                    <p className="fs-13 lit-card-date text-white/80">{date}</p>
                     <a target="_blank" rel="noopener noreferrer" href={link} className="text-decoration-none">
                         <button className="lit-card-btn router-link">View</button>
                     </a>

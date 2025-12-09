@@ -22,7 +22,7 @@
   },
   {
     "name": "BioSegment",
-    "description": "Utilizes AI to segment Mitochondira and Cristae from EM images.",
+    "description": "Utilizes Computer Vision to segment Mitochondira and Cristae from EM images.",
     "img": "bio-segment.jpg",
     "link": "https://advaithmalka.github.io/bio-segment",
     "date": "3/28/25",
