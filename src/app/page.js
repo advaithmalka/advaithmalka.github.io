@@ -38,7 +38,7 @@ export default function Home() {
     return (
         <div className="min-h-screen text-white">
             {/* Hero Section */}
-            <section id="home" className="flex flex-col items-center justify-center text-center min-h-screen relative z-10 px-4">
+            <section id="home" className=" flex flex-col items-center justify-center text-center min-h-screen relative z-10 px-4">
                 <FadeIn>
                     <h1 className="text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 drop-shadow-sm">
                         Hi, I'm Advaith Malka
@@ -88,7 +88,7 @@ export default function Home() {
                             <div className="flex-1">
                                 <h2 className="text-5xl font-bold mb-8 text-stone-200">Who am I?</h2>
                                 <p className="text-xl text-gray-300 leading-relaxed">
-                                    Hi! I’m Advaith Malka, a passionate developer with a strong foundation in various programming languages.
+                                    Hi! I’m Advaith Malka, an upcoming Software Engineer with a strong foundation in various programming languages.
                                     Currently, I’m pursuing a Computer Science degree at Virginia Tech.
                                     When I’m not coding, you can find me on the court playing basketball, pickleball, or tennis.
                                 </p>
