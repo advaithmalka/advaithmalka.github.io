@@ -1,14 +1,32 @@
 [
     {
-        "title": "Undergraduate Researcher",
+        "title": "Undergraduate Research Assistant",
         "company": "ROLE Lab - Virginia Tech",
-        "duration": "August 2025 - January 2026",
-        "description": "Integrated RAG with uncertainty tokens to reduce unnecessary LLM retrieval."
+        "duration": "August 2025 - Present",
+        "description": [
+            "Integrated RAG with special uncertainty tokens, reducing unnecessary LLM retrieval by ~30%.",
+            "Built a RAG evaluation pipeline using vLLM and ElasticSearch to benchmark LLMs on 30K+ queries.",
+            "Automated end-to-end data processing pipelines to standardize 6 major academic datasets for experimentation."
+        ]
     },
     {
-        "title": "Cyber Security and AI Intern",
+        "title": "Cybersecurity and AI Intern",
         "company": "Collins Aerospace - RTX Corporation",
         "duration": "May 2025 - August 2025",
-        "description": "Engineered a RAG-powered AI agent for context-aware code generation and developed tools to optimize cybersecurity fuzzing pipelines."
+        "description": [
+            "Developed an AI agent using RAG to generate context-aware code, accelerating development by ~70%.",
+            "Containerized the RAG agent with Docker, improving scalability and ease of deployment.",
+            "Researched and built cybersecurity tools to optimize fuzzing pipelines and enhance vulnerability detection."
+        ]
+    },
+    {
+        "title": "Undergraduate Research Assistant",
+        "company": "EEG2Text - Virginia Tech",
+        "duration": "February 2025 - June 2025",
+        "description": [
+            "Maintained codebase for EEG2Text research paper by Professor Wang and colleagues.",
+            "Refactored and optimized 2000+ lines of code for improved readability and modularity.",
+            "Identified and resolved 5+ issues by debugging and writing testing scripts using multimodal EEG data."
+        ]
     }
 ]

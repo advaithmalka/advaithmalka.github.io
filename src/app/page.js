@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
 
 import Card from "@/components/Card";
 import SkillSet from "@/components/SkillSet";
@@ -50,11 +50,19 @@ export default function Home() {
                     </p>
                 </FadeIn>
                 <FadeIn delay={0.2}>
-                    <Link href="#projects">
-                        <button className="lit-card-btn px-8 py-3 text-lg font-semibold tracking-wide shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
-                            See My Projects
-                        </button>
-                    </Link>
+                    <div className="flex gap-4 flex-wrap justify-center">
+                        <Link href="#projects">
+                            <button className="lit-card-btn px-8 py-3 text-lg font-semibold tracking-wide shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
+                                See My Projects
+                            </button>
+                        </Link>
+                        <a href="/advaith-resume-2026-2.pdf" target="_blank" rel="noopener noreferrer">
+                            <button className="px-8 py-3 text-lg font-semibold tracking-wide border border-blue-500/50 rounded-lg text-blue-400 hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 flex items-center gap-2">
+                                <FaFileAlt size={18} />
+                                View Resume
+                            </button>
+                        </a>
+                    </div>
                 </FadeIn>
             </section>
 
@@ -88,8 +96,9 @@ export default function Home() {
                             <div className="flex-1">
                                 <h2 className="text-5xl font-bold mb-8 text-stone-200">Who am I?</h2>
                                 <p className="text-xl text-gray-300 leading-relaxed">
-                                    Hi! I’m Advaith Malka, an upcoming Software Engineer with a strong foundation in various programming languages.
-                                    Currently, I’m pursuing a Computer Science degree at Virginia Tech.
+                                    Hi! I’m Advaith Malka, a Computer Science junior at Virginia Tech focused on
+                                    machine learning and AI systems. I've built everything from fine-tuned LLMs to
+                                    computer vision pipelines, and I've shipped production AI tools at Collins Aerospace (RTX).
                                     When I’m not coding, you can find me on the court playing basketball, pickleball, or tennis.
                                 </p>
                             </div>
@@ -112,7 +121,19 @@ export default function Home() {
                                     <h4 className="text-3xl text-white font-semibold mb-2">{exp.title}</h4>
                                     <p className="text-xl text-blue-400 mb-1">{exp.company}</p>
                                     <p className="text-md text-slate-500 mb-4">{exp.duration}</p>
-                                    <p className="text-slate-300 leading-relaxed">{exp.description}</p>
+                                    <ul className="list-disc list-outside ml-4 mt-4 space-y-3">
+                                        {Array.isArray(exp.description) ? (
+                                            exp.description.map((bullet, i) => (
+                                                <li key={i} className="text-slate-300 leading-relaxed text-[15px] marker:text-blue-500 pl-1">
+                                                    {bullet}
+                                                </li>
+                                            ))
+                                        ) : (
+                                            <li className="text-slate-300 leading-relaxed text-[15px] marker:text-blue-500 pl-1">
+                                                {exp.description}
+                                            </li>
+                                        )}
+                                    </ul>
                                 </div>
                             ))}
                         </div>
@@ -153,7 +174,7 @@ export default function Home() {
 
                                 <Tooltip content="Email">
                                     <a
-                                        href="mailto:your.email@example.com"
+                                        href="mailto:advaithmalka@vt.edu"
                                         className="text-gray-400 hover:text-red-500 transition duration-300 transform hover:scale-110"
                                     >
                                         <FaEnvelope size={60} />
