@@ -2,13 +2,13 @@
     {
         "title": "Undergraduate Researcher",
         "company": "ROLE Lab - Virginia Tech",
-        "duration": "August 2025 - Present",
-        "description": "Integrating RAG with uncertainty tokens to reduce unnecessary LLM retrieval."
+        "duration": "August 2025 - January 2026",
+        "description": "Integrated RAG with uncertainty tokens to reduce unnecessary LLM retrieval."
     },
     {
         "title": "Cyber Security and AI Intern",
         "company": "Collins Aerospace - RTX Corporation",
-        "duration": "Summer 2025",
+        "duration": "May 2025 - August 2025",
         "description": "Engineered a RAG-powered AI agent for context-aware code generation and developed tools to optimize cybersecurity fuzzing pipelines."
     }
 ]
