@@ -1,5 +1,17 @@
 [
   {
+    "name": "Traffic Simulator",
+    "description": "Real-time 3D multi-agent traffic simulator using the Improved Intelligent Driver Model and MOBIL lane-change logic to surface emergent behavior like phantom jams.",
+    "img": "traffic-sim.png",
+    "link": "https://advaithmalka.com/traffic_sim/",
+    "date": "4/26/26",
+    "badges": [
+      "python",
+      "react",
+      "ts"
+    ]
+  },
+  {
     "name": "StructAI",
     "description": "Fine-tuned version of Meta LLaMA that can generate real-time visualizations of data structures.",
     "img": "structai.jpg",
