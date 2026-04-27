@@ -21,7 +21,8 @@ export default function Home() {
         "https://advaithmalka-structai-api.hf.space/",
         "https://advaithmalka-cristae-detect-api.hf.space/",
         "https://advaithmalka-mito-detect-api.hf.space/",
-        "https://cop-classifier-api.onrender.com/"
+        "https://cop-classifier-api.onrender.com/",
+        "https://advaithmalka-traffic-sim.hf.space/"
     ];
 
     useEffect(() => {
