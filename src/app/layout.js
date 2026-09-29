@@ -1,18 +1,11 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import "@/app/assets/css/App.scss";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import CursorSpotlight from "@/components/CursorSpotlight";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -29,11 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <CursorSpotlight />
         <Navbar />
         {children}
         <Footer />

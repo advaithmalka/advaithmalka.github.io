@@ -1,29 +1,28 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
+import Image from "next/image";
 
 import Card from "@/components/Card";
 import SkillSet from "@/components/SkillSet";
 import FadeIn from "@/components/FadeIn";
-import Tooltip from "@/components/Tooltip";
 
 import projectData from "@/data/project-data.json";
 import experienceDataJson from "@/data/experience-data.json";
 
+const urlsToPing = [
+    "https://advaithmalka-nc-calculator-api.hf.space/",
+    "https://advaithmalka-structai-api.hf.space/",
+    "https://advaithmalka-cristae-detect-api.hf.space/",
+    "https://advaithmalka-mito-detect-api.hf.space/",
+    "https://cop-classifier-api.onrender.com/",
+    "https://advaithmalka-traffic-sim.hf.space/"
+];
+
 export default function Home() {
     const projects = projectData;
     const experience = experienceDataJson;
-
-    const urlsToPing = [
-        "https://advaithmalka-nc-calculator-api.hf.space/",
-        "https://advaithmalka-structai-api.hf.space/",
-        "https://advaithmalka-cristae-detect-api.hf.space/",
-        "https://advaithmalka-mito-detect-api.hf.space/",
-        "https://cop-classifier-api.onrender.com/",
-        "https://advaithmalka-traffic-sim.hf.space/"
-    ];
 
     useEffect(() => {
         urlsToPing.forEach(async (url) => {
@@ -37,51 +36,38 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="min-h-screen text-white">
-            {/* Hero Section */}
-            <section id="home" className=" flex flex-col items-center justify-center text-center min-h-screen relative z-10 px-4">
+        <main className="min-h-screen portfolio">
+            <section id="home" className="hero flex flex-col items-center justify-center text-center min-h-screen relative px-6">
                 <FadeIn>
-                    <h1 className="text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 drop-shadow-sm">
-                        Hi, I'm Advaith Malka
-                    </h1>
-                </FadeIn>
-                <FadeIn delay={0.2}>
-                    <p className="text-xl max-w-2xl mb-8 text-slate-300 font-light leading-relaxed mx-auto">
-                        I'm a junior at Virginia Tech pursuing a BS in Computer Science focusing on machine learning and data science. Welcome to my personal website, where you can explore my work and learn more about what I do.
-                    </p>
-                </FadeIn>
-                <FadeIn delay={0.2}>
-                    <div className="flex gap-4 flex-wrap justify-center">
-                        <Link href="#projects">
-                            <button className="lit-card-btn px-8 py-3 text-lg font-semibold tracking-wide shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
-                                See My Projects
-                            </button>
-                        </Link>
-                        <a href="/advaith-resume-2026-2.pdf" target="_blank" rel="noopener noreferrer">
-                            <button className="px-8 py-3 text-lg font-semibold tracking-wide border border-blue-500/50 rounded-lg text-blue-400 hover:bg-blue-500/10 hover:border-blue-400 transition-all duration-300 flex items-center gap-2">
-                                <FaFileAlt size={18} />
-                                View Resume
-                            </button>
-                        </a>
+                    <p className="eyebrow hero-eyebrow">SOFTWARE ENGINEERING · APPLIED AI</p>
+                    <h1>Advaith Malka</h1>
+                    <p className="hero-description">Software engineer building<br />AI systems and products.</p>
+                    <p className="hero-meta">Virginia Tech <span aria-hidden="true">·</span> Computer Science</p>
+                    <div className="hero-actions">
+                        <Link href="#projects" className="quiet-button">Explore my work <span aria-hidden="true">↓</span></Link>
+                        <a href="/advaith-resume-2026-3.pdf" target="_blank" rel="noopener noreferrer" className="text-link">View resume <span aria-hidden="true">↗</span></a>
                     </div>
                 </FadeIn>
+                <a href="#projects" className="hero-scroll" aria-label="Scroll to projects"><span aria-hidden="true">↓</span></a>
             </section>
 
             {/* Projects Section */}
             <section id="projects" className="container mx-auto px-6 py-24">
                 <FadeIn>
-                    <h2 className="text-5xl font-bold text-center mb-16 text-white">Projects</h2>
+                    <div className="section-heading"><h2>Projects</h2></div>
                 </FadeIn>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, idx) => (
-                        <FadeIn key={idx} delay={idx * 0.05}>
+                        <FadeIn key={idx}>
                             <Card
                                 title={project.name}
                                 desc={project.description}
                                 link={project.link}
                                 img={project.img}
+                                preview={project.preview}
+                                diagram={project.diagram}
                                 date={project.date}
-                                badges={project.badges.slice().reverse()}
+                                badges={project.badges}
                             />
                         </FadeIn>
                     ))}
@@ -95,16 +81,19 @@ export default function Home() {
                     <FadeIn>
                         <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                             <div className="flex-1">
-                                <h2 className="text-5xl font-bold mb-8 text-stone-200">Who am I?</h2>
-                                <p className="text-xl text-gray-300 leading-relaxed">
-                                    Hi! I’m Advaith Malka, a Computer Science junior at Virginia Tech focused on
-                                    machine learning and AI systems. I've built everything from fine-tuned LLMs to
-                                    computer vision pipelines, and I've shipped production AI tools at Collins Aerospace (RTX).
+                                <h2 className="about-title">A little about me.</h2>
+                                <p className="about-copy">
+                                    Hi! I’m Advaith Malka, a Computer Science senior at Virginia Tech focused on
+                                    machine learning and AI systems. I’ve built everything from fine-tuned LLMs to
+                                    computer vision pipelines, and I’ve shipped production AI tools at Collins Aerospace (RTX).
                                     When I’m not coding, you can find me on the court playing basketball, pickleball, or tennis.
                                 </p>
                             </div>
-                            <div className="size-[400px] shrink-0 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl flex items-center justify-center">
-                                <img
+                            <div className="about-portrait shrink-0 overflow-hidden flex items-center justify-center">
+                                <Image
+                                    width={400}
+                                    height={400}
+                                    sizes="(max-width: 767px) 280px, (max-width: 1100px) 300px, 400px"
                                     src="/img/about-photo.png"
                                     alt="Advaith Malka"
                                     className="w-full h-full object-cover"
@@ -114,23 +103,26 @@ export default function Home() {
                     </FadeIn>
 
                     {/* Experience */}
-                    <FadeIn delay={0.2}>
-                        <h3 className="text-5xl font-semibold mb-12 text-white">Experience</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                    <FadeIn>
+                        <div id="experience" className="section-heading"><h3>Where I’ve worked.</h3></div>
+                        <div className="experience-list glass-surface">
                             {experience.map((exp, index) => (
-                                <div key={index} className="bg-slate-900/60 p-8 rounded-xl shadow-xl border border-slate-700/50 backdrop-blur-sm">
-                                    <h4 className="text-3xl text-white font-semibold mb-2">{exp.title}</h4>
-                                    <p className="text-xl text-blue-400 mb-1">{exp.company}</p>
-                                    <p className="text-md text-slate-500 mb-4">{exp.duration}</p>
-                                    <ul className="list-disc list-outside ml-4 mt-4 space-y-3">
+                                <div key={index} className="experience-row">
+                                    <div className="experience-summary">
+                                    <h4 className="experience-role">{exp.title}</h4>
+                                    <p className="experience-company">{exp.link ? <a href={exp.link} target="_blank" rel="noopener noreferrer">{exp.company} <span aria-hidden="true">↗</span></a> : exp.company}</p>
+                                    <p className="experience-location">{exp.location}</p>
+                                    <p className="experience-date">{exp.duration}</p>
+                                    </div>
+                                    <ul className="experience-details">
                                         {Array.isArray(exp.description) ? (
                                             exp.description.map((bullet, i) => (
-                                                <li key={i} className="text-slate-300 leading-relaxed text-[15px] marker:text-blue-500 pl-1">
+                                                <li key={i} >
                                                     {bullet}
                                                 </li>
                                             ))
                                         ) : (
-                                            <li className="text-slate-300 leading-relaxed text-[15px] marker:text-blue-500 pl-1">
+                                            <li >
                                                 {exp.description}
                                             </li>
                                         )}
@@ -141,51 +133,24 @@ export default function Home() {
                     </FadeIn>
 
                     {/* Skills */}
-                    <FadeIn delay={0.3}>
-                        <h3 className="text-white text-5xl font-semibold mb-8">Skills</h3>
+                    <FadeIn>
+                        <div id="skills" className="section-heading"><h3>Skills</h3></div>
                         <SkillSet />
                     </FadeIn>
 
-                    {/* Get in Touch */}
-                    <FadeIn delay={0.4}>
-                        <div className="text-center mt-24">
-                            <h3 className="text-5xl font-semibold mb-8 text-white">Get in Touch</h3>
-                            <div className="flex justify-center gap-8">
-                                <Tooltip content="GitHub">
-                                    <a
-                                        href="https://github.com/AdvaithMalka"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-gray-400 hover:text-white transition duration-300 transform hover:scale-110"
-                                    >
-                                        <FaGithub size={60} />
-                                    </a>
-                                </Tooltip>
-
-                                <Tooltip content="LinkedIn">
-                                    <a
-                                        href="https://www.linkedin.com/in/advaithmalka"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-gray-400 hover:text-blue-500 transition duration-300 transform hover:scale-110"
-                                    >
-                                        <FaLinkedin size={60} />
-                                    </a>
-                                </Tooltip>
-
-                                <Tooltip content="Email">
-                                    <a
-                                        href="mailto:advaithmalka@vt.edu"
-                                        className="text-gray-400 hover:text-red-500 transition duration-300 transform hover:scale-110"
-                                    >
-                                        <FaEnvelope size={60} />
-                                    </a>
-                                </Tooltip>
+                    <FadeIn>
+                        <div id="contact" className="contact-panel glass-surface">
+                            <p className="eyebrow">LET’S CONNECT</p>
+                            <div className="contact-heading"><h3>Have something<br /><em>interesting</em> in mind?</h3><a href="mailto:advaithmalka@vt.edu" className="quiet-button">Get in touch <span aria-hidden="true">↗</span></a></div>
+                            <div className="contact-links">
+                                <a href="https://github.com/AdvaithMalka" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                                <a href="https://www.linkedin.com/in/advaithmalka" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                                <a href="mailto:advaithmalka@vt.edu">Email ↗</a>
                             </div>
                         </div>
                     </FadeIn>
                 </div>
             </section>
-        </div>
+        </main>
     );
 }

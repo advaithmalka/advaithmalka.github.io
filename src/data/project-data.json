@@ -1,5 +1,17 @@
 [
   {
+    "name": "OneRep",
+    "description": "Apple Watch strength training app with on-device exercise recognition and rep tracking.",
+    "preview": "onerep",
+    "link": "https://github.com/advaithmalka/OneRep",
+    "date": "9/1/26",
+    "badges": [
+      "swift",
+      "watchkit",
+      "pytorch"
+    ]
+  },
+  {
     "name": "Traffic Simulator",
     "description": "Real-time 3D multi-agent traffic simulator using the Improved Intelligent Driver Model and MOBIL lane-change logic to surface emergent behavior like phantom jams.",
     "img": "traffic-sim.png",
@@ -9,6 +21,19 @@
       "python",
       "react",
       "ts"
+    ]
+  },
+  {
+    "name": "Product Data Ingestion System",
+    "description": "Fault-tolerant AWS pipeline that turns product pages into schema-validated metadata; benchmarked at about 3,813 events per second.",
+    "diagram": "flowchart LR\n  subgraph collect[Collect]\n    direction TB\n    ebay@{ icon: \"project:ebay\", label: \"eBay\", h: 40 }\n    amazon@{ icon: \"project:amazon\", label: \"Amazon\", h: 40 }\n    parse[HTML + parser]\n    ebay --> parse\n    amazon --> parse\n  end\n  parse --> json@{ icon: \"project:file-json\", label: \"JSON\", h: 42 }\n  json --> ai@{ icon: \"project:openai\", label: \"OpenAI\", h: 42 }\n  ai --> validate[Pydantic]\n  json -. parser fallback .-> validate\n  validate --> db@{ icon: \"project:database\", label: \"Database\", h: 42 }\n  db --> api[Flask + trends]",
+    "link": "https://github.com/advaithmalka/product-injestion",
+    "date": "1/1/26",
+    "badges": [
+      "ec2",
+      "flask",
+      "selenium",
+      "openai"
     ]
   },
   {

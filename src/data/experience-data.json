@@ -1,32 +1,38 @@
 [
-    {
-        "title": "Undergraduate Research Assistant",
-        "company": "ROLE Lab - Virginia Tech",
-        "duration": "August 2025 - Present",
-        "description": [
-            "Integrated RAG with special uncertainty tokens, reducing unnecessary LLM retrieval by ~30%.",
-            "Built a RAG evaluation pipeline using vLLM and ElasticSearch to benchmark LLMs on 30K+ queries.",
-            "Automated end-to-end data processing pipelines to standardize 6 major academic datasets for experimentation."
-        ]
-    },
-    {
-        "title": "Cybersecurity and AI Intern",
-        "company": "Collins Aerospace - RTX Corporation",
-        "duration": "May 2025 - August 2025",
-        "description": [
-            "Developed an AI agent using RAG to generate context-aware code, accelerating development by ~70%.",
-            "Containerized the RAG agent with Docker, improving scalability and ease of deployment.",
-            "Researched and built cybersecurity tools to optimize fuzzing pipelines and enhance vulnerability detection."
-        ]
-    },
-    {
-        "title": "Undergraduate Research Assistant",
-        "company": "EEG2Text - Virginia Tech",
-        "duration": "February 2025 - June 2025",
-        "description": [
-            "Maintained codebase for EEG2Text research paper by Professor Wang and colleagues.",
-            "Refactored and optimized 2000+ lines of code for improved readability and modularity.",
-            "Identified and resolved 5+ issues by debugging and writing testing scripts using multimodal EEG data."
-        ]
-    }
+  {
+    "title": "Cybersecurity and AI Engineering Intern",
+    "company": "RTX",
+    "duration": "May 2025 – August 2026",
+    "location": "Cedar Rapids, IA",
+    "description": [
+      "Built Neo4j knowledge graph and AI Agent pipeline to generate RMFs, reducing compliance writing time by 50%.",
+      "Developed AI agent with RAG for context-aware internal-library code generation, speeding development by 70%.",
+      "Built LLM-guided fuzzer that compared GRM/DUT outputs and found 20% more unique crashes than AFL++.",
+      "Containerized 3 RAG services with Docker Compose, cutting setup ~80% and saving ~2 engineer-hours/deployment."
+    ]
+  },
+  {
+    "title": "Undergraduate Research Assistant",
+    "company": "ROLE Lab",
+    "duration": "August 2025 – May 2026",
+    "location": "Blacksburg, VA",
+    "link": "https://github.com/advaithmalka/AI-Agent-with-uncertainty",
+    "description": [
+      "Fine-tuned an LLM to emit uncertainty tokens, triggering RAG only below thresholds and cutting retrieval ~30%.",
+      "Engineered a RAG evaluation pipeline using vLLM and ElasticSearch to benchmark LLMs on 30K+ queries.",
+      "Outperformed AdaRAG, DRAGIN, and 4+ RAG methods on 5 datasets while cutting inference latency by 18%.",
+      "Automated end-to-end data processing pipelines to standardize 6 major academic datasets for experimentation."
+    ]
+  },
+  {
+    "title": "Undergraduate Research Assistant",
+    "company": "EEG2TEXT",
+    "duration": "February 2025 – June 2025",
+    "location": "Blacksburg, VA",
+    "description": [
+      "Improved EEG-to-text BLEU/ROUGE scores ~5% through multimodal pipeline optimization.",
+      "Refactored and optimized 2000+ lines of code into modular components for improved readability and maintainability.",
+      "Resolved 5+ data and pipeline issues by developing validation scripts and debugging multimodal EEG processing."
+    ]
+  }
 ]
